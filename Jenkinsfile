@@ -6,6 +6,7 @@ def utils = new io.fabric8.Utils()
 
 mavenNode {
   checkout scm
+  echo "Test CI"
   if (utils.isCI()) {
 
     mavenCI {
